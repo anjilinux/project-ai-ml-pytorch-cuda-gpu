@@ -43,8 +43,6 @@ RUN uv pip install --no-cache-dir \
 #            tverous/pytorch-notebook:latest
 #CMD ["jupyter", "notebook", "--NotebookApp.token='your_secret_token'"]
 
-
-
 #docker run -it --rm -p 8888:8888 -e JUPYTER_TOKEN="your_secret_token" jupyter/base-notebook
 
 #docker run -it --rm -p 8888:8888 jupyter/base-notebook start-notebook.py --NotebookApp.password='argon2:$argon2id$v=19$m=10240,t=10,p=8$your_hashed_password_here'
